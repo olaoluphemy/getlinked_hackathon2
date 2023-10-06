@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="CSS/mobile.css"
+    />
+    <title>Getlinked-Register</title>
+  </head>
+  <body>
+    <nav id="#register" class="nav fade-in registration">
+      <ul class="main-nav nav_links border_bottom">
+        <li class="nav_link logo">
+          get<span class="text_primary">Linked</span>
+        </li>
+        <ul class="links">
+          <li class="nav_link">
+            <a class="link main_link" href="index.html#timeline">Timeline</a>
+          </li>
+          <li class="nav_link">
+            <a class="link main_link" href="index.html#overview">Overview</a>
+          </li>
+          <li class="nav_link">
+            <a class="link main_link" href="index.html#FAQs">FAQs</a>
+          </li>
+          <li class="nav_link">
+            <a class="link main_link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav_link">
+            <a class="btn primary main_link" href="register.html">Register</a>
+          </li>
+        </ul>
+        <!-- Hidden Side-Nav -->
+        <div class="hamburger_container">
+          <img class="hamburger" src="img/hamburger.png" alt="" />
+        </div>
+      </ul>
+
+      <ul class="hidden side_nav">
+        <img src="img/x.png" alt="" class="close" />
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="index.html#timeline">Timeline</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="index.html#overview">Overview</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="#FAQs">FAQs</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="contact.html">Contact</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link btn primary" href="register.html">Register</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="register" class="introduction fade-in registration">
+      <div class="container-intro">
+        <div class="highlight_grad grad_pos--2 resize"></div>
+        <div class="highlight_grad grad_pos--3 resize"></div>
+        <div class="img-container">
+          <img class="regular fade-out" src="img/man_sitting.png" alt="" />
+        </div>
+        <div class="intro-text">
+          <h3 class="text_primary">Register</h3>
+          <div class="movement">
+            <p class="white">Be part of this movement</p>
+            <div class="emojis">
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+            <h3 class="white create">CREATE YOUR ACCOUNT</h3>
+
+            <form action="">
+              <div class="sides">
+                <div class="side--1">
+                  <label class="white" for="name">Team's Name</label>
+                  <br />
+                  <input
+                    type="text"
+                    placeholder="Enter group name"
+                    class="reg_input group_name"
+                    name="name"
+                  />
+                  <br />
+                  <label class="white" for="email">Email</label>
+                  <br />
+                  <input class="reg_input email" type="text" id="email" placeholder="Enter your email" />
+                  <br />
+                  <label class="white">Category</label>
+                  <br />
+                  <input
+                  class="reg_input category"
+                  id="categories"
+                    type="text"
+                    name="categories"
+                    list="category"
+                    placeholder="select your category"
+                  />
+                  <datalist id="category">
+                    <option  value="MOBILE"></option>
+                    <option  value="WEB"></option>
+                    <option  value="UI/UX"></option>
+                  </datalist>
+                </div>
+                <div class="side--2">
+                  <label class="white" >Phone</label>
+                  <br />
+                  <input
+                  id="phone"
+                  class="reg_input phone"
+                    type="text"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                  <label class="white" >Project Topic</label>
+                  <br />
+                  <input type="text" id="topic" class="reg_input topic" placeholder="what is your project topic ?" />
+                  <br />
+                  <label class="white" >Group Size</label>
+                  <br />
+                  <input
+                  class="reg_input size"
+                  type="text"
+                  name="group_size"
+                  list="size"
+                  placeholder="select"
+                />
+                <datalist id="size">
+                  <option value="10"></option>
+                  <option value="20"></option>
+                  <option value="30"></option>
+                </datalist>
+              </div>
+                </div>
+              </div>
+            </form>
+            <p class="warning text_primary invisible">
+              please review your registration details before submitting
+            </p>
+            <div class="terms_and_conditions">
+              <input class="checkbox" type="checkbox" />
+              <p class="white">
+                I agree with the event terms and conditions and privacy policy
+              </p>
+            </div>
+            <button class="register-btn btn white">Register Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="successful invisible">
+        <div class="successful-img">
+          <img class="img_1" src="img/successfully-done-5108472-4288033 1.png" alt="">
+          <img  class="img_2" src="img/successful-man-3025713-2526911 1.png" alt="">
+        </div>
+        <h3 class="white">Congratulations you have succesfully registered!</h3>
+        <p class="white">Yes, it was easy and you did it</p>
+        <div class="flex">
+          <p class="white">Check your mail box for next step </p>
+          <img src="img/1531010992wink-emoji-woman-png 1.png" alt="">
+        </div>
+        <button class="btn white back-btn">Back</button>
+      </div>
+    </section>
+    <!-- Blur Effect for Open Side-Nav -->
+    <div class="overlay invisible"></div>
+    <script src="javascript/register.js"></script>
+  </body>
+</html>

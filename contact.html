@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="CSS/mobile.css"
+    />
+    <title>Getlinked-Register</title>
+  </head>
+  <body>
+    <nav id="#register" class="nav">
+      <ul class="main-nav nav_links border_bottom">
+        <li class="nav_link logo">
+          get<span class="text_primary">Linked</span>
+        </li>
+        <ul class="links">
+          <li class="nav_link">
+            <a class="link main_link" href="index.html#timeline">Timeline</a>
+          </li>
+          <li class="nav_link">
+            <a class="link main_link" href="index.html#overview">Overview</a>
+          </li>
+          <li class="nav_link">
+            <a class="link main_link" href="index.html#FAQs">FAQs</a>
+          </li>
+          <li class="nav_link">
+            <a class="link main_link" href="#">Contact</a>
+          </li>
+          <li class="nav_link">
+            <a class="link btn primary main_link" href="register.html#register">Register</a>
+          </li>
+        </ul>
+        <!-- Hidden Side-Nav -->
+        <div class="hamburger_container">
+          <img class="hamburger" src="img/hamburger.png" alt="" />
+        </div>
+      </ul>
+
+      <ul class="hidden side_nav">
+        <img src="img/x.png" alt="" class="close" />
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="index.html#timeline">Timeline</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="index.html#overview">Overview</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="index.html#FAQs">FAQs</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link link" href="contact.html">Contact</a>
+        </li>
+        <li class="hidden_nav">
+          <a class="hidden_link btn primary" href="register.html">Register</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="enquiries" class="introduction enquiries">
+      <div class="container-intro">
+        <div class="highlight_grad grad_pos--2 resize"></div>
+          <div class="highlight_grad grad_pos--3 resize"></div>
+        <div class="company_deets">
+            <h2 class="text_primary">Get in touch</h2>
+            <p class="white">Contact
+              <br>information
+            </p>
+            <p class="white">27, Alara Street
+              <br>Yaba 100012
+              <br>Lagos State
+            </p>
+            <p class="white">Call Us: 07067981819</p>
+            <p class="white">we are open from Monday-Friday
+              <br>08:00am-05:00</p>
+    
+              <div class="social_accts">
+                <p class="text_primary share_on">Share on</p>
+                <div class="social_acct_images">
+                  <img src="img/instagram.png" alt="">
+                  <img src="img/twitter.png" alt="">
+                  <img src="img/facebook.png" alt="">
+                  <img src="img/ri_linkedin-fill.png" alt="">
+                </div>
+              </div>
+        </div>
+
+
+        <div class="intro-text">
+          <h3 class="text_primary heading">Questions or need assistance?
+            <br>Let us know about it
+          </h3>
+                <div class="info">
+                  <label for="name"></label>
+                  <input class="input name" id="name" type="text" placeholder="First Name" />
+                  <br />
+                  <label for="email"></label>
+                  <input  class="input email" id="email" type="text" placeholder="Mail" />
+                  <br />
+                  <label for="number"></label>
+                  <input  class="input number" id="number" type="text" placeholder="Phone Number" />
+                  <br />
+                  <label for="number"></label>
+                  <input
+                    type="text"
+                    name="message"
+                    list="category"
+                    placeholder="Message"
+                    class="message input"
+                  />
+              </div>
+              <div class="button">
+                <a class="btn submit_btn" href="#">Submit</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="successful invisible">
+        <h3 class="white">Your message was sent 😊</h3>
+        <p class="white">You'll receive a feedback shortly</p>
+        <div class="flex">
+          <p class="white">kindly check your email box for feedback</p>
+        </div>
+        <button class="btn white back-btn"><a href="index.html">Go Home</a></button>
+      </div>
+    </section>
+    <!-- Blur Effect for Open Side-Nav -->
+    <div class="overlay invisible"></div>
+    <script src="javascript/getintouch.js"></script>
+  </body>
+</html>

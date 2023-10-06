@@ -1,0 +1,368 @@
+body {
+  overflow-x: hidden;
+}
+
+.grad_pos--1 {
+  left: -40px;
+}
+
+/* Nav-Bar */
+.nav {
+  z-index: 500;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.nav_links > .nav_link {
+  margin-left: 0px;
+}
+
+.nav_link {
+  display: none;
+}
+
+.hamburger_container {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+
+.hamburger {
+  display: block;
+  z-index: 1;
+}
+
+/* Hidden Nav */
+.side_nav {
+  width: 200px;
+  height: 280px;
+  display: block;
+  background-color: var(--primary-dark);
+  position: absolute;
+  padding: 1.5rem;
+  top: 0;
+  right: 0;
+  z-index: 552;
+  transition: all 0.5s ease-in;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 1s;
+}
+
+.hidden_nav .btn {
+  padding: 10px 20px !important;
+}
+
+.side_nav .close {
+  position: absolute;
+  right: 20px;
+}
+
+.side_nav li {
+  margin: 10px 0;
+}
+
+/* Header Content */
+.header {
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+.header p {
+  font-size: 0.8rem;
+}
+
+.timer {
+  font-size: 1.8rem !important;
+}
+
+.img--1,
+.img--2 {
+  display: none;
+}
+
+.curve-flex {
+  display: flex;
+  flex-direction: column;
+  text-wrap: nowrap;
+  align-items: center;
+  margin: 20px 40px;
+}
+
+.curve {
+  width: 110px;
+  margin-left: 190px;
+}
+
+.paragraph h1 {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container p {
+  margin: 0px 0;
+  text-align: center;
+}
+
+.header_content h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+
+.text h1 {
+  font-size: 1.5rem;
+}
+
+.hack {
+  position: relative;
+}
+
+.hack .img--1 {
+  position: absolute;
+  top: 0;
+  right: 110px;
+  width: 30px;
+}
+
+.hack .img--2 {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  width: 30px;
+}
+
+.header_content p {
+  margin: 20px 0;
+}
+
+.button {
+  width: fit-content;
+  margin: auto;
+}
+
+.timer {
+  font-size: 1.8rem;
+}
+
+.unit {
+  font-size: 0.8rem;
+}
+
+.images {
+  width: 100%;
+  position: relative;
+}
+
+.images .first {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.images .last {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 45px;
+  opacity: 0.7;
+}
+
+/* SECTION--1 */
+.container-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container-intro h3 {
+  font-size: 20px;
+}
+
+.img-container {
+  margin: auto;
+}
+
+.intro-text h3 {
+  text-align: center;
+}
+
+.intro-text p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* SECTION--3 */
+#section--3 .img-container {
+  margin-top: 40px;
+}
+
+.elipse {
+  width: 100px;
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  z-index: -1;
+}
+
+/* SECTION--4 */
+#section--4 .text_underline {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  margin-top: 5rem;
+}
+
+.FAQs .question_mark--1 {
+  left: 100px;
+}
+
+.FAQs .question_mark--3 {
+  top: -20px;
+  right: 125px;
+}
+
+/*SECTION--5 TIMELINE */
+.timeline {
+  padding: 1rem;
+}
+
+.timeline_lists li {
+  width: 6px;
+  background-color: var(--tertiary-color);
+  position: relative;
+  margin: 40px 25px;
+  padding-top: 40px;
+}
+
+.timeline_lists li .div--1,
+.timeline_lists li .div--2 {
+  left: 10px;
+  text-align: start;
+  width: 200px;
+  margin-left: 15px;
+}
+
+.timeline_lists li .child,
+.timeline_lists li .child--2 {
+  position: relative;
+  left: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 200px;
+}
+
+.timeline_lists li .child--2 {
+  width: 400px;
+}
+
+.timeline_lists p {
+  font-size: 0.7rem;
+  text-wrap: wrap;
+}
+
+.timeline_lists h4 {
+  font-size: 0.9rem;
+}
+
+.bronze {
+  margin-right: 0;
+}
+
+.silver,
+.bronze {
+  padding: 0.2rem;
+}
+
+/* PARTNERS AND SPONSORS */
+.partners_sponsors {
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.partners_sponsors p {
+  font-size: 0.7rem;
+  text-wrap: wrap;
+}
+
+.logo_container {
+  margin: 0 auto;
+}
+
+.logo_container img {
+  width: 55px;
+}
+
+.logos_row--1 {
+  margin-bottom: 1rem;
+}
+
+/* SECTION--7 */
+.privacy_container {
+  padding: 2rem;
+}
+
+#section--7 .lock {
+  left: 50px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* REGISTRATION FORM */
+.sides {
+  grid-template-columns: 1fr;
+}
+
+.sides input {
+  width: 100%;
+}
+
+.sides .side--1 {
+  margin-right: 0;
+}
+
+.successful {
+  width: 80%;
+  height: 80%;
+}
+
+.successful {
+  top: 140%;
+  left: 50%;
+}
