@@ -153,7 +153,7 @@ registerBtn.addEventListener("click", function (e) {
       el.value = "";
     });
     checkbox.checked = false;
-  }, 3500);
+  }, 2500);
 });
 
 // CLOSE SUCCESS MODAL

@@ -370,6 +370,18 @@ html body {
   left: 50%;
 }
 
+.successful2 {
+  width: 80%;
+  height: fit-content;
+  top: 70%;
+  left: 50%;
+}
+
+/* .successful2 {
+  top: 140%;
+  left: 50%;
+} */
+
 @media screen and (min-width: 360px) {
   .timeline_lists li .div--1,
   .timeline_lists li .div--2 {

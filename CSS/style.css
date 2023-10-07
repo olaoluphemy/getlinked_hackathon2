@@ -942,7 +942,7 @@ ul .timeline_lists {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 65%;
   height: fit-content;
   margin: auto;
   padding: 3rem 2rem;
@@ -953,6 +953,7 @@ ul .timeline_lists {
 
 .successful2 .btn {
   text-wrap: nowrap;
+  margin: auto;
 }
 
 .successful p {
