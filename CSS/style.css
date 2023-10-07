@@ -19,15 +19,15 @@
   );
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-dark);
   transition: all 1s ease-in;
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -81,7 +81,7 @@ a {
 }
 
 .hidden {
-  transform: translateX(250px);
+  transform: translateY(-250px);
 }
 
 .invisible {
@@ -133,6 +133,9 @@ a {
 }
 
 .highlight_grad {
+  /* set to none cos it disturbs the flow of other screensizes */
+  /* removed for sake of responsiveness */
+  display: none;
   position: absolute;
   height: 350px;
   width: 350px;

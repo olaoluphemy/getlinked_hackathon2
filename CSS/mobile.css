@@ -1,14 +1,15 @@
-body {
-  overflow-x: hidden;
+html body {
+  overflow-x: hidden !important;
 }
 
-.grad_pos--1 {
-  left: -40px;
+.highlight_grad {
+  display: none;
 }
 
 /* Nav-Bar */
 .nav {
   z-index: 500;
+  width: 100%;
 }
 
 .nav_links {
@@ -30,10 +31,11 @@ body {
 }
 
 .hamburger_container {
+  justify-self: end;
   display: flex;
   align-items: center;
   height: 35px;
-  width: 35px;
+  width: fit-content;
 }
 
 .hamburger {
@@ -260,7 +262,7 @@ body {
   width: 6px;
   background-color: var(--tertiary-color);
   position: relative;
-  margin: 40px 25px;
+  margin: 40px 20px;
   padding-top: 40px;
 }
 
@@ -268,7 +270,7 @@ body {
 .timeline_lists li .div--2 {
   left: 10px;
   text-align: start;
-  width: 200px;
+  width: 300px;
   margin-left: 15px;
 }
 
@@ -278,11 +280,12 @@ body {
   left: 20px;
   margin-top: 20px;
   margin-left: 5px;
-  width: 200px;
+  width: 300px;
 }
 
 .timeline_lists li .child--2 {
-  width: 400px;
+  right: 100px;
+  width: 300px;
 }
 
 .timeline_lists p {
@@ -365,4 +368,77 @@ body {
 .successful {
   top: 140%;
   left: 50%;
+}
+
+@media screen and (min-width: 360px) {
+  .timeline_lists li .div--1,
+  .timeline_lists li .div--2 {
+    left: 10px;
+    text-align: start;
+    width: 140px;
+    margin-left: 15px;
+  }
+
+  .timeline_lists li .child,
+  .timeline_lists li .child--2 {
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 140px;
+  }
+
+  .timeline_lists li .child--2 {
+    right: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .timeline_lists li .div--1,
+  .timeline_lists li .div--2 {
+    left: 10px;
+    text-align: start;
+    width: 250px;
+    margin-left: 15px;
+  }
+
+  .timeline_lists li .child,
+  .timeline_lists li .child--2 {
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 250px;
+  }
+
+  .timeline_lists li .child--2 {
+    right: 100px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timeline_lists li .div--1,
+  .timeline_lists li .div--2 {
+    left: 10px;
+    text-align: start;
+    width: 300px;
+    margin-left: 15px;
+  }
+
+  .timeline_lists li .child,
+  .timeline_lists li .child--2 {
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 300px;
+  }
+
+  .timeline_lists li .child--2 {
+    /* display: none; */
+    right: 100px;
+    width: 300px;
+  }
 }
