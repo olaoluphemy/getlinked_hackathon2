@@ -266,26 +266,44 @@ html body {
   padding-top: 40px;
 }
 
-.timeline_lists li .div--1,
-.timeline_lists li .div--2 {
+.timeline_lists li .div--1 {
+  position: relative;
+  min-width: 170px;
   left: 10px;
   text-align: start;
-  width: 300px;
-  margin-left: 15px;
+  transition: all 1s ease;
+  text-align: start;
+  margin-left: 50px;
+  margin-bottom: 8px;
 }
 
-.timeline_lists li .child,
-.timeline_lists li .child--2 {
+.timeline_lists li .child {
   position: relative;
-  left: 20px;
-  margin-top: 20px;
-  margin-left: 5px;
-  width: 300px;
+  min-width: 170px;
+  left: 10px;
+  transition: all 1s ease;
+  bottom: 0;
+  margin-left: 50px;
+}
+
+.timeline_lists li .div--2 {
+  position: relative;
+  min-width: 170px;
+  left: 10px;
+  transition: all 1s ease;
+  text-align: start;
+  margin-left: 50px;
 }
 
 .timeline_lists li .child--2 {
-  right: 100px;
-  width: 300px;
+  display: none;
+  position: absolute;
+  min-width: 170px;
+  left: 20px;
+  transition: all 1s ease;
+  bottom: 0;
+  margin-left: 50px;
+  margin-bottom: -20px;
 }
 
 .timeline_lists p {
@@ -375,82 +393,4 @@ html body {
   height: fit-content;
   top: 70%;
   left: 50%;
-}
-
-/* .successful2 {
-  top: 140%;
-  left: 50%;
-} */
-
-@media screen and (min-width: 360px) {
-  .timeline_lists li .div--1,
-  .timeline_lists li .div--2 {
-    left: 10px;
-    text-align: start;
-    width: 140px;
-    margin-left: 15px;
-  }
-
-  .timeline_lists li .child,
-  .timeline_lists li .child--2 {
-    position: relative;
-    left: 20px;
-    margin-top: 20px;
-    margin-left: 5px;
-    width: 140px;
-  }
-
-  .timeline_lists li .child--2 {
-    right: 100px;
-    width: 100px;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .timeline_lists li .div--1,
-  .timeline_lists li .div--2 {
-    left: 10px;
-    text-align: start;
-    width: 250px;
-    margin-left: 15px;
-  }
-
-  .timeline_lists li .child,
-  .timeline_lists li .child--2 {
-    position: relative;
-    left: 20px;
-    margin-top: 20px;
-    margin-left: 5px;
-    width: 250px;
-  }
-
-  .timeline_lists li .child--2 {
-    right: 100px;
-    width: 250px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .timeline_lists li .div--1,
-  .timeline_lists li .div--2 {
-    left: 10px;
-    text-align: start;
-    width: 300px;
-    margin-left: 15px;
-  }
-
-  .timeline_lists li .child,
-  .timeline_lists li .child--2 {
-    position: relative;
-    left: 20px;
-    margin-top: 20px;
-    margin-left: 5px;
-    width: 300px;
-  }
-
-  .timeline_lists li .child--2 {
-    /* display: none; */
-    right: 100px;
-    width: 300px;
-  }
 }

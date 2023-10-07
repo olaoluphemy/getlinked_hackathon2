@@ -486,39 +486,57 @@ ul .timeline_lists {
 
 .timeline_lists li .div--1 {
   position: relative;
-  width: 400px;
-  right: 500px;
+  min-width: 190px;
+  right: 300px;
   transition: all 1s ease;
   text-align: end;
 }
 
 .timeline_lists li .child {
   position: relative;
-  width: 400px;
-  left: 100px;
+  width: 100px;
+  left: 50px;
   transition: all 1s ease;
   bottom: 0;
 }
 
-.transform {
-  transform: translateX(200px);
-  opacity: 0;
-}
-
 .timeline_lists li .div--2 {
   position: relative;
-  width: 400px;
-  left: 100px;
+  width: 190px;
+  left: 50px;
   transition: all 1s ease;
   text-align: left;
 }
 
 .timeline_lists li .child--2 {
   position: absolute;
-  width: 400px;
-  right: -140px;
+  width: 300px;
+  right: -20px;
   transition: all 1s ease;
   bottom: 0;
+}
+
+/* LAPTOPS AND TABLETS */
+@media screen and (min-width: 1024px) {
+  .timeline_lists li .child--2,
+  .timeline_lists li .div--2,
+  .timeline_lists li .child,
+  .timeline_lists li .div--1 {
+    width: 400px;
+  }
+
+  .timeline_lists li .div--1 {
+    right: 500px;
+  }
+
+  .timeline_lists li .child--2 {
+    right: -140px;
+  }
+}
+
+.transform {
+  transform: translateX(200px);
+  opacity: 0;
 }
 
 .transform-2 {
