@@ -2,7 +2,7 @@
 const inputs = document.querySelectorAll(".input");
 const button = document.querySelector(".button");
 const overlay = document.querySelector(".overlay");
-const success = document.querySelector(".successful");
+const success = document.querySelector(".successful2");
 const hiddenNav = document.querySelector(".side_nav");
 const hamburgerContainer = document.querySelector(".hamburger_container");
 const hiddenNavCloseButton = document.querySelector(".close");
@@ -15,7 +15,6 @@ const message = document.querySelector(".message");
 //DISCLAIMER: as at time of upload i haven't properly learnt my javaScript promises so pls be gentle😪
 //this was supposed to relay info to the backEnd 🤡
 const submitEnquiry = function (obj) {
-  console.log(obj);
   fetch("https://backend.getlinked.ai/hackathon/contact-form", {
     method: "POST",
     headers: {
@@ -61,7 +60,7 @@ button.addEventListener("click", function (e) {
     overlay.classList.remove("invisible");
     heading.textContent =
       "Questions or need\n assistance?  \n Let us know about it";
-  }, 3500);
+  }, 2000);
 
   // for sending data to backend
   submitEnquiry(obj);
@@ -76,9 +75,15 @@ const openHiddenNav = function () {
 };
 hamburgerContainer.addEventListener("click", openHiddenNav);
 
+// const removeOverlay = function(){
+// }
+
 const closeHiddenNav = function () {
   if (!hiddenNav.classList.contains("hidden")) {
     hiddenNav.classList.add("hidden");
+
+    if (!success.classList.contains("invisible")) return;
+
     overlay.classList.add("invisible");
   }
 };

@@ -95,7 +95,10 @@ registerBtn.addEventListener("click", function (e) {
 
   // warning message for empty input or unchecked checkbox
   const inputValues = arr.map((el) => el.value);
-  if (inputValues.some((el) => el === "") || checkbox.checked === false) {
+
+  if (inputValues.some((el) => el === "")) {
+    warning.textContent =
+      "please review your registration details before submitting";
     warning.classList.remove("invisible");
 
     arr.forEach(function (el) {
@@ -103,6 +106,13 @@ registerBtn.addEventListener("click", function (e) {
         el.style.border = "1px solid #d434fe";
       }
     });
+
+    return;
+  } else if (!inputValues.some((el) => el === "") && !checkbox.checked) {
+    warning.textContent = "please check the box to proceed";
+    warning.classList.remove("invisible");
+
+    return;
   } else {
     warning.classList.add("invisible");
   }
@@ -114,14 +124,8 @@ registerBtn.addEventListener("click", function (e) {
     }
   });
 
-  // returns if there's any empty input field
-  if (inputValues.some((el) => el === "") || checkbox.checked === false) return;
-
   // displays success modal and uploads data if all conditions are met
-  if (
-    successModal.classList.contains("invisible") &&
-    checkbox.checked === true
-  ) {
+  if (successModal.classList.contains("invisible") && checkbox.checked) {
     // successModal.classList.remove("invisible");
     // overlay.classList.remove("invisible");
     registerBtn.textContent = "Sending, please wait...";
@@ -190,6 +194,9 @@ const openHiddenNav = function () {
 const closeHiddenNav = function () {
   if (!hiddenNav.classList.contains("hidden")) {
     hiddenNav.classList.add("hidden");
+
+    if (!successModal.classList.contains("invisible")) return;
+
     overlay.classList.add("invisible");
   }
 };

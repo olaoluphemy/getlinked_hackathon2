@@ -81,7 +81,7 @@ a {
 }
 
 .hidden {
-  transform: translateY(-250px);
+  transform: translateY(-100%);
 }
 
 .invisible {
@@ -931,6 +931,28 @@ ul .timeline_lists {
   text-align: center;
   border: 1px solid var(--tertiary-color);
   z-index: 105;
+}
+
+.enquiries {
+  position: relative;
+}
+
+.successful2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: fit-content;
+  margin: auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 1px solid var(--tertiary-color);
+  z-index: 105;
+}
+
+.successful2 .btn {
+  text-wrap: nowrap;
 }
 
 .successful p {
