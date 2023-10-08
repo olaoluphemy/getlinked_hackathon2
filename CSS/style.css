@@ -486,8 +486,8 @@ ul .timeline_lists {
 
 .timeline_lists li .div--1 {
   position: relative;
-  min-width: 190px;
-  right: 300px;
+  min-width: 150px;
+  right: 240px;
   transition: all 1s ease;
   text-align: end;
 }
@@ -502,37 +502,40 @@ ul .timeline_lists {
 
 .timeline_lists li .div--2 {
   position: relative;
-  width: 190px;
+  width: 150px;
   left: 50px;
   transition: all 1s ease;
   text-align: left;
 }
 
 .timeline_lists li .child--2 {
+  text-align: end;
   position: absolute;
-  width: 300px;
-  right: -20px;
+  width: 150px;
+  right: 100px;
   transition: all 1s ease;
   bottom: 0;
 }
 
 /* LAPTOPS AND TABLETS */
+/* responsiveness for screens starting with 1024 */
 @media screen and (min-width: 1024px) {
   .timeline_lists li .child--2,
   .timeline_lists li .div--2,
   .timeline_lists li .child,
   .timeline_lists li .div--1 {
-    width: 400px;
+    width: 200px;
   }
 
   .timeline_lists li .div--1 {
-    right: 500px;
+    right: 300px;
   }
 
   .timeline_lists li .child--2 {
-    right: -140px;
+    right: 65px;
   }
 }
+/* ends here */
 
 .transform {
   transform: translateX(200px);
